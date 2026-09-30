@@ -114,7 +114,19 @@ Task Manager can help an IT support technician identify applications using a lar
 
 ### Lab 4 — Windows Services
 
-Status: ⬜ Not Started
+
+#### Windows Update Service
+
+- Status: Stopped
+- Startup Type: Manual (Triggered)
+- Log On As: Local System
+
+#### What I Learned
+
+The Windows Update service helps detect, download, and install Windows and other program updates.
+
+I learned that Windows services can have different states and startup types. IT support technicians can check services when troubleshooting Windows problems.
+
 
 ### Lab 5 — Network Troubleshooting
 
