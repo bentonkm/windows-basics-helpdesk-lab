@@ -145,7 +145,23 @@ I practiced basic Windows network troubleshooting using Command Prompt. These co
 
 ### Lab 6 — Troubleshooting Scenario
 
-Status: ⬜ Not Started
+#### Problem
+
+A user reported that their computer was connected to Wi-Fi but websites were not loading.
+
+#### Troubleshooting Steps
+
+1. Pinged the router — 4 packets sent, 4 received.
+2. Pinged `google.com` — 4 packets sent, 4 received.
+3. Used `nslookup google.com` — successfully resolved the domain.
+
+#### Conclusion
+
+The computer was able to reach the local router, reach Google, and successfully resolve the domain name. The basic network connection and DNS resolution were working correctly.
+
+#### What I Learned
+
+I learned how to troubleshoot network connectivity step by step by checking the local network, internet connectivity, and DNS resolution separately.
 
 ## What I Learned
 
