@@ -92,7 +92,25 @@ Windows user accounts can have different permission levels. Administrator accoun
 
 ### Lab 3 — Task Manager
 
-Status: ⬜ Not Started
+#### Findings
+
+- CPU Usage: 5%
+- Memory Usage: 53%
+- Disk Usage: 3%
+- Network Usage: 0%
+- Firefox: 676.9 MB memory
+- Brave Browser: 624.4 MB memory
+- Google Chrome: 455.3 MB memory
+- ChatGPT: 425.2 MB memory
+- Background Processes: 93
+
+#### What I Did
+
+I opened Windows Task Manager using `Ctrl + Shift + Esc` and reviewed the Processes tab to see how applications were using system resources.
+
+#### What I Learned
+
+Task Manager can help an IT support technician identify applications using a large amount of CPU or memory when troubleshooting slow computer performance.
 
 ### Lab 4 — Windows Services
 
