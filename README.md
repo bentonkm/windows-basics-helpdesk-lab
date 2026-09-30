@@ -42,6 +42,13 @@ Status: ✅ Completed
 - BIOS Mode: UEFI
 - Secure Boot: On
 
+- Installed RAM: 16 GB
+- Graphics: Intel UHD Graphics 620
+- Storage: 477 GB
+- System Type: 64-bit operating system, x64-based processor
+- Windows Version: 25H2
+- OS Build: 26200.9457
+
 #### What I Did
 
 I used the Windows System Information tool (`msinfo32`) to identify the computer's operating system, hardware, processor, BIOS mode, and Secure Boot status.
