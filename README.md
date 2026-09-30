@@ -27,7 +27,6 @@ Build practical Windows troubleshooting skills for an entry-level IT Support / H
 ## Labs
 
 ### Lab 1 — System Information
-Status: ✅ Completed
 
 #### System Information
 
@@ -81,7 +80,15 @@ System Information is useful for IT support because it allows a technician to qu
 
 ### Lab 2 — User Accounts & Permissions
 
-Status: ⬜ Not Started
+
+
+### Findings
+- Local user account: USER
+- User group: Administrators
+- The account has administrator privileges.
+
+### What I Learned
+Windows user accounts can have different permission levels. Administrator accounts have higher privileges and can perform system-level tasks.
 
 ### Lab 3 — Task Manager
 
