@@ -130,7 +130,18 @@ I learned that Windows services can have different states and startup types. IT 
 
 ### Lab 5 — Network Troubleshooting
 
-Status: ⬜ Not Started
+
+
+#### Tests Performed
+
+- `ipconfig` — checked network configuration.
+- `ping google.com` — successful.
+- `ipconfig /flushdns` — DNS cache successfully flushed.
+- `nslookup google.com` — successfully resolved google.com to IP addresses.
+
+#### What I Learned
+
+I practiced basic Windows network troubleshooting using Command Prompt. These commands can help an IT support technician identify connectivity and DNS problems.
 
 ### Lab 6 — Troubleshooting Scenario
 
