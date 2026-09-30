@@ -48,6 +48,12 @@ Status: ✅ Completed
 - System Type: 64-bit operating system, x64-based processor
 - Windows Version: 25H2
 - OS Build: 26200.9457
+  
+- Wi-Fi Adapter: Intel Wi-Fi 6 AX200
+- Connection Type: 802.11n
+  
+  
+
 
 #### What I Did
 
