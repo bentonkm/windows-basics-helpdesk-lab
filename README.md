@@ -1,426 +1,368 @@
-IT Support Lab – File Management Test
+# Windows Basics — Help Desk Lab
 
+## Project Goal
 
+This project was created to build practical Windows troubleshooting skills for an entry-level IT Support / Help Desk role.
 
-\# Windows Basics — Help Desk Lab
+The project focuses on using built-in Windows tools to gather system information, investigate performance issues, understand user permissions, check Windows services, troubleshoot network connectivity, and document technical problems.
 
+---
 
+## What I Practiced
 
-\## Project Goal
+* Windows system information
+* Hardware and software identification
+* User accounts and permissions
+* Task Manager
+* Windows Services
+* Command Prompt
+* Network troubleshooting
+* DNS troubleshooting
+* Basic Windows troubleshooting
+* IT support documentation
+* Troubleshooting step by step
 
+---
 
+## Tools Used
 
-Build practical Windows troubleshooting skills for an entry-level IT Support / Help Desk role.
+* Windows 11
+* Windows built-in troubleshooting tools
+* System Information (`msinfo32`)
+* Task Manager
+* Command Prompt
+* PowerShell
+* GitHub
 
+---
 
+# Labs
 
-This project documents hands-on Windows tasks and basic troubleshooting techniques that an entry-level IT support technician may use when helping users.
+## Lab 1 — System Information
 
+### Objective
 
+The objective of this lab was to gather information about the computer's hardware, operating system, and configuration.
 
-\## What I Practiced
+### System Information
 
+* Operating System: Windows 11 Pro
+* Version: 10.0.26200
+* Manufacturer: HP
+* Model: HP EliteBook 840 G6
+* System Type: x64-based PC
+* Processor: Intel Core i7-8665U
+* CPU Cores: 4
+* Logical Processors: 8
+* BIOS Mode: UEFI
+* Secure Boot: On
+* Installed RAM: 16 GB
+* Graphics: Intel UHD Graphics 620
+* Storage: 477 GB
+* Windows Version: 25H2
+* OS Build: 26200.9457
+* Wi-Fi Adapter: Intel Wi-Fi 6 AX200
+* Connection Type: 802.11n
 
-
-\* Windows system information
-
-\* User accounts and permissions
-
-\* Task Manager
-
-\* Windows Services
-
-\* Network troubleshooting
-
-\* Command Prompt troubleshooting
-
-\* Basic Windows troubleshooting
-
-\* Documenting IT support problems and solutions
-
-
-
-\## Tools Used
-
-
-
-\* Windows 11
-
-\* Windows built-in tools
-
-\* Command Prompt
-
-\* Task Manager
-
-\* System Information (`msinfo32`)
-
-\* PowerShell
-
-\* GitHub
-
-
-
-\---
-
-
-
-\# Labs
-
-
-
-\## Lab 1 — System Information
-
-
-
-\### System Information
-
-
-
-\* Operating System: Windows 11 Pro
-
-\* Version: 10.0.26200
-
-\* Manufacturer: HP
-
-\* Model: HP EliteBook 840 G6
-
-\* System Type: x64-based PC
-
-\* Processor: Intel Core i7-8665U
-
-\* CPU Cores: 4
-
-\* Logical Processors: 8
-
-\* BIOS Mode: UEFI
-
-\* Secure Boot: On
-
-\* Installed RAM: 16 GB
-
-\* Graphics: Intel UHD Graphics 620
-
-\* Storage: 477 GB
-
-\* Windows Version: 25H2
-
-\* OS Build: 26200.9457
-
-\* Wi-Fi Adapter: Intel Wi-Fi 6 AX200
-
-\* Connection Type: 802.11n
-
-
-
-\### Task Manager
-
-
+### Task Manager
 
 I opened Task Manager using `Ctrl + Shift + Esc` and reviewed the Processes and Performance tabs.
 
+* CPU usage observed: 7–13%
+* Memory usage observed: about 50%
+* Disk usage observed: about 2–4%
+* RAM: 16 GB DDR4
+* CPU cores: 4
+* Logical processors: 8
+* Storage: 477 GB NVMe SSD
+* Wi-Fi adapter: Intel Wi-Fi 6 AX200
 
+### What I Learned
 
-\* CPU usage observed: 7–13%
+I learned how to use Windows System Information and Task Manager to quickly identify a computer's hardware and current system resource usage.
 
-\* Memory usage observed: about 50%
+These tools are useful for IT support technicians when documenting a computer or investigating performance-related problems.
 
-\* Disk usage observed: about 2–4%
+---
 
-\* RAM: 16 GB DDR4
+## Lab 2 — User Accounts & Permissions
 
-\* CPU cores: 4
+### Objective
 
-\* Logical processors: 8
+The objective of this lab was to identify the local Windows user account and understand its permission level.
 
-\* Storage: 477 GB NVMe SSD
+### Findings
 
-\* Wi-Fi adapter: Intel Wi-Fi 6 AX200
+* Local user account: USER
+* User group: Administrators
+* Account privilege level: Administrator
 
+### What I Learned
 
+Windows user accounts can have different permission levels.
 
-\### What I Learned
+Administrator accounts have higher privileges and can perform system-level tasks. Understanding user permissions is important when troubleshooting access problems and managing Windows computers.
 
+---
 
+## Lab 3 — Task Manager
 
-Task Manager helps IT support technicians identify applications and system resources that may be causing performance problems.
+### Objective
 
+The objective of this lab was to use Task Manager to examine how applications and background processes were using system resources.
 
+### Findings
 
-I also used the Windows System Information tool (`msinfo32`) to identify the computer's hardware and Windows configuration.
+* CPU Usage: 5%
+* Memory Usage: 53%
+* Disk Usage: 3%
+* Network Usage: 0%
+* Firefox: 676.9 MB memory
+* Brave Browser: 624.4 MB memory
+* Google Chrome: 455.3 MB memory
+* ChatGPT: 425.2 MB memory
+* Background Processes: 93
 
+### What I Did
 
+I opened Windows Task Manager using `Ctrl + Shift + Esc` and reviewed the Processes tab.
 
-\---
+I examined running applications and their CPU, memory, disk, and network usage.
 
+### What I Learned
 
+Task Manager can help an IT support technician identify applications that are using a large amount of CPU or memory.
 
-\## Lab 2 — User Accounts \& Permissions
+This can be useful when investigating complaints such as:
 
+* "My computer is slow."
+* "An application is frozen."
+* "My computer is using too much memory."
+* "Something is making my computer run slowly."
 
+---
 
-\### Findings
+## Lab 4 — Windows Services
 
+### Objective
 
+The objective of this lab was to inspect a Windows service and understand its status, startup type, and account.
 
-\* Local user account: USER
+### Windows Update Service
 
-\* User group: Administrators
+* Service: Windows Update
+* Status: Stopped
+* Startup Type: Manual (Triggered)
+* Log On As: Local System
 
-\* The account has administrator privileges.
+### What I Learned
 
+Windows services run in the background and provide important operating system functions.
 
+The Windows Update service helps Windows detect, download, and install updates.
 
-\### What I Learned
+I also learned that services can have different states and startup types. Checking services can be useful when troubleshooting Windows features that are not working correctly.
 
+---
 
+## Lab 5 — Network Troubleshooting
 
-Windows user accounts can have different permission levels. Administrator accounts have higher privileges and can perform system-level tasks.
+### Objective
 
+The objective of this lab was to practice basic network troubleshooting using Windows Command Prompt.
 
+### Tests Performed
 
-Understanding user permissions is important when troubleshooting access problems and managing Windows computers.
+#### `ipconfig`
 
+Used to check the computer's network configuration.
 
+#### `ping google.com`
 
-\---
+Used to test connectivity to Google.
 
+Result:
 
+**Successful**
 
-\## Lab 3 — Task Manager
+#### `ipconfig /flushdns`
 
+Used to clear the computer's DNS cache.
 
+Result:
 
-\### Findings
+**DNS cache successfully flushed.**
 
+#### `nslookup google.com`
 
+Used to test DNS resolution.
 
-\* CPU Usage: 5%
+Result:
 
-\* Memory Usage: 53%
+**Successfully resolved google.com to IP addresses.**
 
-\* Disk Usage: 3%
+### What I Learned
 
-\* Network Usage: 0%
+I learned how to use basic Windows networking commands to investigate connectivity and DNS problems.
 
-\* Firefox: 676.9 MB memory
+These commands provide a simple troubleshooting process for determining whether a problem is related to network configuration, Internet connectivity, or DNS resolution.
 
-\* Brave Browser: 624.4 MB memory
+---
 
-\* Google Chrome: 455.3 MB memory
+## Lab 6 — Network Troubleshooting Scenario
 
-\* ChatGPT: 425.2 MB memory
-
-\* Background Processes: 93
-
-
-
-\### What I Did
-
-
-
-I opened Windows Task Manager using `Ctrl + Shift + Esc` and reviewed the Processes tab to see how applications were using system resources.
-
-
-
-\### What I Learned
-
-
-
-Task Manager can help an IT support technician identify applications using a large amount of CPU or memory when troubleshooting slow computer performance.
-
-
-
-\---
-
-
-
-\## Lab 4 — Windows Services
-
-
-
-\### Windows Update Service
-
-
-
-\* Status: Stopped
-
-\* Startup Type: Manual (Triggered)
-
-\* Log On As: Local System
-
-
-
-\### What I Learned
-
-
-
-The Windows Update service helps detect, download, and install Windows and other program updates.
-
-
-
-I learned that Windows services can have different states and startup types. IT support technicians can check services when troubleshooting Windows problems.
-
-
-
-\---
-
-
-
-\## Lab 5 — Network Troubleshooting
-
-
-
-\### Tests Performed
-
-
-
-\* `ipconfig` — checked network configuration.
-
-\* `ping google.com` — successful.
-
-\* `ipconfig /flushdns` — DNS cache successfully flushed.
-
-\* `nslookup google.com` — successfully resolved google.com to IP addresses.
-
-
-
-\### What I Learned
-
-
-
-I practiced basic Windows network troubleshooting using Command Prompt.
-
-
-
-These commands can help an IT support technician identify connectivity and DNS problems.
-
-
-
-\---
-
-
-
-\## Lab 6 — Troubleshooting Scenario
-
-
-
-\### Problem
-
-
+### Problem
 
 A user reported that their computer was connected to Wi-Fi but websites were not loading.
 
+### Troubleshooting Steps
 
+#### Step 1 — Test the Local Network
 
-\### Troubleshooting Steps
+I pinged the local router.
 
+Result:
 
+**4 packets sent, 4 packets received.**
 
-1\. Pinged the router — 4 packets sent, 4 received.
+This showed that the computer could communicate with the local network gateway.
 
-2\. Pinged `google.com` — 4 packets sent, 4 received.
+#### Step 2 — Test Internet Connectivity
 
-3\. Used `nslookup google.com` — successfully resolved the domain.
+I pinged `google.com`.
 
+Result:
 
+**4 packets sent, 4 packets received.**
 
-\### Conclusion
+This showed that the computer could reach Google successfully.
 
+#### Step 3 — Test DNS Resolution
 
+I used:
+
+`nslookup google.com`
+
+Result:
+
+**The domain was successfully resolved to IP addresses.**
+
+### Conclusion
 
 The computer was able to reach the local router, reach Google, and successfully resolve the domain name.
 
-
-
 The basic network connection and DNS resolution were working correctly.
 
+### What I Learned
 
+I learned how to troubleshoot network connectivity step by step instead of assuming the problem was caused by one specific component.
 
-\### What I Learned
+The troubleshooting process involved checking:
 
+1. Local network connectivity
+2. Internet connectivity
+3. DNS resolution
 
+This helped me understand how different network troubleshooting commands can be used to narrow down a problem.
 
-I learned how to troubleshoot network connectivity step by step by checking the local network, Internet connectivity, and DNS resolution separately.
+---
 
+# Evidence
 
+Screenshots from the labs are stored in the `evidence` folder.
 
-\---
+The evidence files are PNG screenshots documenting the practical work completed during the project.
 
+### Lab 1 Evidence
 
+* `LAB 1 .png`
+* `LAB1.2.png`
+* `LAB1.3.png`
+* `LAB 1.4.png`
+* `LAB 1.5 .png`
+* `LAB 1.6.png`
 
-\# Evidence
+### Lab 3 Evidence
 
+* `LAB 3.png`
+* `LAB 3.1 ..png`
+* `LAB 3.2 .png`
+* `LAB 3.3..png`
 
+### Lab 4 Evidence
 
-Screenshots from each lab are organized in the `evidence` folder.
+* `LAB 4.png`
 
+### Lab 5 Evidence
 
+* `LAB 5.png`
 
-\* \[Lab 1 Evidence](evidence/Lab%201/)
+### Lab 6 Evidence
 
-\* \[Lab 2 Evidence](evidence/Lab%202/)
+* `LAB 6.png`
 
-\* \[Lab 3 Evidence](evidence/Lab%203/)
+> Note: The screenshot filenames were kept as originally created during the labs. Some filenames contain spaces or additional periods, but all files are valid PNG image files.
 
-\* \[Lab 4 Evidence](evidence/Lab%204/)
+---
 
-\* \[Lab 5 Evidence](evidence/Lab%205/)
-
-\* \[Lab 6 Evidence](evidence/Lab%206/)
-
-
-
-\---
-
-
-
-\# Skills Demonstrated
-
-
+# Skills Demonstrated
 
 This project demonstrates beginner-level practical skills in:
 
+* Windows system information gathering
+* Hardware and software identification
+* Task Manager
+* User accounts and permissions
+* Windows Services
+* Command Prompt
+* Network troubleshooting
+* DNS troubleshooting
+* Basic Windows administration
+* Troubleshooting methodology
+* Technical documentation
+* Recording troubleshooting findings
 
+---
 
-\* Windows system information gathering
+# Troubleshooting Approach
 
-\* Hardware and software identification
+One of the main skills practiced throughout this project was troubleshooting problems step by step.
 
-\* Task Manager usage
+Instead of immediately changing settings or guessing the cause of a problem, I practiced:
 
-\* User accounts and permissions
+1. Identifying the problem
+2. Gathering information
+3. Running appropriate tests
+4. Recording the results
+5. Identifying what was working
+6. Narrowing down the possible cause
+7. Documenting the conclusion
 
-\* Windows Services
+This approach can be applied to many basic IT support situations.
 
-\* Command Prompt
+---
 
-\* Basic network troubleshooting
+# Final Summary
 
-\* DNS troubleshooting
+This project gave me hands-on experience with common Windows tools and basic IT support troubleshooting techniques.
 
-\* Basic IT support documentation
+I practiced gathering system information, reviewing system performance, understanding user permissions, inspecting Windows services, and troubleshooting network and DNS connectivity.
 
-\* Troubleshooting methodology
+The project also helped me develop the habit of documenting:
 
+* The reported problem
+* Troubleshooting steps
+* Test results
+* Findings
+* Conclusion
+* Supporting evidence
 
+These are foundational skills for an entry-level IT Support / Help Desk role.
 
-\---
+---
 
+## Project Status
 
+**Completed — Labs 1–6**
 
-\# Final Summary
-
-
-
-This project gave me hands-on practice with common Windows tools and basic IT support troubleshooting techniques.
-
-
-
-I learned how to gather system information, review system performance, understand user permissions, inspect Windows services, and troubleshoot basic network and DNS problems.
-
-
-
-The project also helped me practice documenting technical problems, troubleshooting steps, findings, and conclusions in a clear format.
-
-
-
+**Project Type:** Beginner IT Support / Help Desk Portfolio Project
