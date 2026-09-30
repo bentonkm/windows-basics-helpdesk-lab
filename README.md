@@ -51,7 +51,23 @@ Status: ✅ Completed
   
 - Wi-Fi Adapter: Intel Wi-Fi 6 AX200
 - Connection Type: 802.11n
-  
+
+#### Task Manager
+
+I opened Task Manager using `Ctrl + Shift + Esc` and reviewed the Processes and Performance tabs.
+
+- CPU usage observed: 7–13%
+- Memory usage observed: about 50%
+- Disk usage observed: about 2–4%
+- RAM: 16 GB DDR4
+- CPU cores: 4
+- Logical processors: 8
+- Storage: 477 GB NVMe SSD
+- Wi-Fi adapter: Intel Wi-Fi 6 AX200
+
+#### What I Learned
+
+Task Manager helps IT support technicians identify applications and system resources that may be causing performance problems.
   
 
 
